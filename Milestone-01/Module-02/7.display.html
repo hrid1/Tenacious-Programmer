@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>External CSS</title>
+
+    <style>
+      .blog {
+        border: 2px solid blueviolet;
+        padding: 5px;
+        margin: 10px;
+        background-color: aquamarine;
+        box-shadow: 5px 10px 2px violet;
+      }
+
+      .second {
+        /*  display: none;    */
+
+        visibility: hidden;
+
+        /* 
+            1st. totally gone
+            2nd. space are still there
+            */
+      }
+
+      h2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- (div>h2{header$}+p{ Lorem ipsum dolor sit. })*3 -->
+    <div class="blog">
+      <h2>Heading-1</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, quis
+        laudantium assumenda molestias neque nulla. ipsum dolor sit amet
+        consectetur adipisicing elit. Id, nulla omnis! A, reprehenderit? Facere
+        aliquid excepturi inventore numquam quis ipsum, ratione velit at quas
+        iure!
+      </p>
+    </div>
+    <div class="blog second">
+      <h2>Heading-2</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, quis
+        laudantium assumenda molestias neque nulla. ipsum dolor sit amet
+        consectetur adipisicing elit. Id, nulla omnis! A, reprehenderit? Facere
+        aliquid excepturi inventore numquam quis ipsum, ratione velit at quas
+        iure!
+      </p>
+    </div>
+    <div class="blog">
+      <h2>Heading-3</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, quis
+        laudantium assumenda molestias neque nulla. ipsum dolor sit amet
+        consectetur adipisicing elit. Id, nulla omnis! A, reprehenderit? Facere
+        aliquid excepturi inventore numquam quis ipsum, ratione velit at quas
+        iure!
+      </p>
+    </div>
+    <div class="d"></div>
+  </body>
+</html>
