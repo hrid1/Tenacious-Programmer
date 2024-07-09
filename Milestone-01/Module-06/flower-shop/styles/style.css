@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* common section */
+.btn-primary {
+  padding: 12px 18px;
+  border-radius: 8px;
+  color: white;
+  background: rgb(229, 84, 115);
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.text-pink {
+  color: rgb(229, 84, 115);
+}
+
+/*  */
+#banner-section {
+  width: 1280px;
+  height: 460px;
+  background: rgba(229, 84, 115, 0.1);
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  justify-content: center;
+  padding: 120px;
+}
+
+.left-container {
+  width: 708px;
+  height: 506px;
+  /* border: 2px solid greenyellow; */
+}
+
+.right-container {
+  width: 435px;
+  height: 600px;
+  /* border: 1px solid green; */
+}
+
+.left-container > h1 {
+  color: rgb(39, 39, 39);
+  font-family: Lato;
+  font-size: 80px;
+  font-weight: 800;
+}
+
+.left-container > p {
+  color: rgba(39, 39, 39, 0.6);
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+.right-container > img {
+  width: 465px;
+  height: 600px;
+}
+
+/* feauture section */
+#feature-section {
+  width: 1100px;
+  margin: 120px auto;
+}
+
+.feature-info {
+  text-align: center;
+  width: 594px;
+  margin: 0 auto;
+}
+
+.feature-info > h2 {
+  color: rgb(39, 39, 39);
+  font-family: Lato;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.feature-info > p {
+  color: rgba(39, 39, 39, 0.6);
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 18px;
+  margin-bottom: 32px;
+}
+
+/* -------------------------- */
+
+.feature-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 10px; */
+  /* border: 5px solid yellow; */
+  justify-content: space-between;
+}
+
+.feature-div .flower {
+  /* border: 2px solid blueviolet; */
+  width: 344px;
+  height: 435px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+#flower-first {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background: rgba(167, 33, 98, 0.15);
+}
+#flower-second {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background: rgba(5, 151, 160, 0.15);
+}
+#flower-third {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background: rgba(71, 125, 17, 0.15);
+}
+
+.flower > img {
+  width: 270px;
+  height: 358px;
+  /* border: 4px solid salmon; */
+}
+
+.feature-div > p {
+  text-align: center;
+  color: rgb(39, 39, 39);
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 20px;
+  /* margin-bottom: 10px; */
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+#delivery-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  border-radius: 8px;
+  background: rgba(39, 39, 39, 0.05);
+  padding: 60px 0;
+}
+
+.delivery-details img {
+  margin-bottom: 24px;
+}
+
+.delivery-details p {
+  color: rgba(39, 39, 39, 0.8);
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* ------------------------------------------ */
+#sale-banner-section {
+  width: 1280px;
+  height: 300px;
+  background: rgba(229, 84, 115, 0.05);
+  display: flex;
+  gap: 180px;
+  align-items: center;
+  justify-content: center;
+  margin: 100px auto;
+  padding: 120px;
+  text-align: center;
+}
+
+.sale-info {
+  width: 554px;
+  height: 208px;
+  /* border: 2px solid gray; */
+}
+
+.sale-info > h2 {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.sale-info > p {
+  color: rgba(39, 39, 39, 0.6);
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 25px 0;
+}
+
+#insta-galary-section {
+  width: 1100px;
+  margin: 0px auto;
+  /* border: 2px dotted darkblue; */
+}
+
+.galary-info {
+  text-align: center;
+}
+
+.galary-info > h2 {
+  color: rgb(39, 39, 39);
+  font-family: Lato;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.galary-info > p {
+  color: rgba(39, 39, 39, 0.6);
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 28px auto;
+  width: 472px;
+}
+
+.images-container {
+  display: flex;
+  /* gap: 20px; */
+  /* justify-items: center; */
+  justify-content: space-between;
+  align-items: center;
+}
+.images-container img {
+  width: 264px;
+  height: 306px;
+}
+
+#subscribe-contianer {
+  width: 1100px;
+  height: 300px;
+  background-image: url("../images/Rectangle9.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 100px auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.input-info {
+  margin-top: 30px;
+  text-align: center;
+}
+.input-info > h2 {
+  color: rgb(39, 39, 39);
+  font-family: Lato;
+  font-size: 40px;
+  font-weight: 800;
+}
+.input-info > p {
+  color: rgba(39, 39, 39, 0.6);
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 12px;
+}
+
+/* .email-box {
+  margin-bottom: 10px;
+} */
+
+.email-box > input {
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+  border: none;
+  padding: 14px 18px;
+  margin-right: 4px;
+  width: 300px;
+
+  color: rgba(39, 39, 39, 0.6);
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* -----------footer----------------- */
+#footer-section {
+  width: 1500px;
+  height: 300px;
+  background-color: rgb(17, 16, 16);
+  color: white;
+  /* border: 2px solid blue; */
+  margin: 0 auto;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-info h2 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 58px;
+}
+.footer-info p {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 24px;
+  width: 625px;
+}
+
+.copy-right {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+}
