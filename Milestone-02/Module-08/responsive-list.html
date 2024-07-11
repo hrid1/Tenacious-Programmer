@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .img-div{
+            width: 50%;
+            border: 2px solid black;
+            padding: 10px;
+            
+        }
+        .img-div > img{
+            width: 100%;
+            
+        }
+
+        .img-container{
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 520px) {
+            .img-div{
+                width: 80%;
+            }
+            .img-container{
+                flex-direction: column;
+        
+            }            
+        }
+    </style>
+  </head>
+  <body>
+    <h3>Responsive Website:</h3>
+    <ul>
+      <li>Viewport</li>
+      <li>css relative unit</li>
+      <li>body max-width</li>
+    </ul>
+
+    <div class="img-container">
+      <div class="img-div">
+        <img src="./images/food2.webp" alt="" />
+      </div>
+
+      <div class="img-div">
+        <img src="./images/food.jpeg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
