@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        height: 100vh;
+        /* width: 100vh; */
+      }
+
+      .container {
+        height: 100%;
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 1rem;
+      }
+
+      .box {
+        background-color: blueviolet;
+        border: 5px solid black;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        color: white;
+      }
+
+      #header,
+      #footer {
+        grid-column: span 3;
+      }
+
+      #left-bar {
+        grid-row: span 2;
+      }
+
+      #content1 {
+        grid-column: span 2;
+      }
+
+      @media screen and (max-width: 580px) {
+        .container {
+          grid-template-rows: repeat(6, 1fr);
+        }
+
+        #left-bar {
+          grid-row: span 1;
+        }
+        #content1 {
+          grid-column: span 3;
+        }
+
+        .box {
+          background: #000;
+          /* grid-column: span 3;*/
+          grid-column-start: 1;
+          grid-column-end: 4;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="header" class="box">Header</div>
+      <div id="left-bar" class="box">Slidebar</div>
+      <div id="content1" class="box">Content</div>
+      <div class="box">box-4</div>
+      <div class="box">box-5</div>
+      <div id="footer" class="box">Footer</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .row {
+        height: 400px;
+        display: flex;
+        gap: 5px;
+      }
+
+      .row > div{
+        flex: 1;
+      }
+
+      .vertical-collage img{
+        height: 50%;
+    }
+
+    .img-clg{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2px;
+        text-align: center;
+        justify-content: space-between;
+        
+    }
+    .img-clg > img{
+        width: 49.5%;
+        height: 49%;
+    
+    }
+
+     
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- <h2>Image Galary</h2> -->
+    </header>
+
+    <main>
+      <div class="row">
+        <img src="./images/A.jpg" alt="" />
+      </div>
+
+      <div class="row">
+        <div>
+            <img src="./images/B.jpg" alt="">
+        </div>
+        <div>
+            <img src="./images/C.jpg" alt="">
+        </div>
+        <div class="vertical-collage">
+            <img src="./images/D.jpg" alt="">
+            <img src="./images/E.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div>
+            <img src="./images/F.jpg" alt="">
+        </div>
+        <div class="img-clg">
+            <img src="./images/G.jpg" alt="">
+            <img src="./images/G.jpg" alt="">
+            <img src="./images/G.jpg" alt="">
+            <img src="./images/G.jpg" alt="">
+        </div>
+        <div>
+            <img src="./images/H.jpg" alt="">
+        </div>
+
+      </div>
+    </main>
+  </body>
+</html>
