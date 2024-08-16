@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Delegate</title>
+  </head>
+  <body>
+    <h1>Explore Event Delegate</h1>
+
+    <div id="all-list">
+      <li class="list" id="item-1">lorem-1</li>
+      <li class="list" id="item-2">lorem-2</li>
+      <li class="list" id="item-3">lorem-3</li>
+      <li class="list" id="item-4">lorem-4</li>
+      <li class="list" id="item-5">lorem-5</li>
+    </div>
+    <br />
+    <input id="task-input" type="text" placeholder="Enter new task" />
+    <button id="add-btn">Add Task</button>
+
+    <script>
+      // add new task
+      document.getElementById("add-btn").addEventListener("click", () => {
+        const listContainer = document.getElementById("all-list");
+        const newInput = document.getElementById("task-input");
+        const newTask = newInput.value;
+        newInput.value = "";
+
+        const newList = document.createElement("li");
+        newList.classList.add("list");
+        newList.innerText = newTask;
+
+        listContainer.appendChild(newList);
+      });
+
+      //   Remove Task:
+     
+
+      document.getElementById("all-list").addEventListener("click", (event) => {
+        event.target.parentNode.removeChild(event.target);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comment BOx</title>
+  </head>
+  <body>
+    <h1>Please add Your comment</h1>
+
+    <div id="cmt-div">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus,
+        inventore rerum! Fugiat dolorem sapiente assumenda quas eius.
+      </p>
+      <p>
+        It amet consectetur, adipisicing elit. Doloribus, inventore rerum!
+        Fugiat dolorem sapiente assumenda quas eius.
+      </p>
+      <p>
+        My name is Heor. By the road and river Lorem ipsum dolor sit amet
+        consectetur, adipisicing elit. Doloribus, inventore rerum! Fugiat
+        dolorem sapiente assumenda quas eius.
+      </p>
+    </div>
+
+    <br />
+    <div>
+      <textarea
+        name=""
+        cols="50"
+        placeholder="Add Your Comment"
+        id="input-cmt"
+      ></textarea>
+      <br />
+      <button id="submit-cmt">Submit</button>
+    </div>
+
+    <script>
+      document
+        .getElementById("submit-cmt")
+        .addEventListener("click", function () {
+          const newInput = document.getElementById("input-cmt");
+          const commentVal = newInput.value;
+          newInput.value = "";
+
+          const newdocument = document.createElement("p");
+          newdocument.innerText = commentVal;
+          //   console.log(newdocument)
+
+          document.getElementById("cmt-div").appendChild(newdocument);
+        });
+    </script>
+  </body>
+</html>

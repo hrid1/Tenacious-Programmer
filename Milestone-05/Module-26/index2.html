@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Common Ways Event Handle</title>
+  </head>
+  <body>
+    <h1>Final DOM Event Handlers</h1>
+
+    <h2 id="my-name" style="text-align: center">I am Man</h2>
+
+    <h3 id="handle-status">Default Text</h3>
+
+    <button onclick="handleOnClick()">Handle by onClick</button>
+    <button id="event-listener">Handle by EventListener</button>
+    <br />
+    <br />
+    <input id="name-input" type="text" />
+    <button id="update-name">Update Name</button>
+
+    <script>
+      // Option: 1
+
+      function handleOnClick() {
+        const handleStatus = document.getElementById("handle-status");
+        handleStatus.innerText = "Handle By OnClick";
+      }
+
+      // Option:2
+
+      document
+        .getElementById("event-listener")
+        .addEventListener("click", function () {
+          const handleStatus = document.getElementById("handle-status");
+          handleStatus.innerText = "Handle By Event Listener";
+        });
+
+      document
+        .getElementById("update-name")
+        .addEventListener("click", function () {
+          const inputField = document.getElementById("name-input");
+          inputText = inputField.value;
+
+          const name = document.getElementById("my-name");
+          name.innerText = inputText;
+          inputField.value = '';
+        });
+    </script>
+  </body>
+</html>
