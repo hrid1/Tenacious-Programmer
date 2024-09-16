@@ -43,7 +43,7 @@ const Navbar = () => {
       <ul
         className={`${
           open ? "ml-2 " : "-ml-24 "
-        } md:flex gap-6 absolute bg-gray-950 px-4 py-2 rounded-md mx-2 duration-300 md:ml-0 `}
+        } md:flex gap-6 absolute md:static bg-gray-950 px-4 py-2 rounded-md mx-2 duration-300 md:ml-0 `}
       >
         {routes.map((route) => (
           <Link key={route.id} route={route}></Link>
