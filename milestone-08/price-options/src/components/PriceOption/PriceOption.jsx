@@ -1,4 +1,6 @@
 import { TiTick } from "react-icons/ti";
+// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const PriceOption = ({ option }) => {
   //   console.log(option);
@@ -30,5 +32,9 @@ const PriceOption = ({ option }) => {
     </div>
   );
 };
+
+PriceOption.propTypes = {
+    option: PropTypes.object,
+}
 
 export default PriceOption;
