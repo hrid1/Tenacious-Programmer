@@ -1,22 +1,51 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
-  const navLinks = (
-    <>
-      <li>
-        <Link to={"/"}>Home</Link>
-      </li>
-      <li>
-        <Link to={"/about"}>About</Link>
-      </li>
-      <li>
-        <Link to={"/contact"}>Contact</Link>
-      </li>
-      <li>
-        <Link to={"/bookmark"}>Bookmark</Link>
-      </li>
-    </>
-  );
+    const navLinks = (
+        <>
+          <li>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "text-white font-bold font-bold" : "text-gray-500" // or any other inactive style
+              }
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? "text-white font-bold" : "text-gray-500"
+              }
+            >
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive ? "text-white font-bold" : "text-gray-500"
+              }
+            >
+              Contact
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/bookmark"
+              className={({ isActive }) =>
+                isActive ? "text-white font-bold" : "text-gray-500"
+              }
+            >
+              Bookmark
+            </NavLink>
+          </li>
+        </>
+      );
+      
 
   return (
     <div className="navbar bg-base-100">
